@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Troca de Refil | Manancial Purificadores</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4faff;
+      color: #1a1a1a;
+      text-align: center;
+      line-height: 1.6;
+    }
+
+    header {
+      background: url('https://i.ibb.co/d4NvRk2x/IMG-6007.jpg') center/cover no-repeat;
+      color: #fff;
+      padding: 60px 20px;
+      position: relative;
+    }
+
+    header::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,40,0.55);
+    }
+
+    header .content {
+      position: relative;
+      z-index: 1;
+    }
+
+    header h1 {
+      font-size: 34px;
+      margin-bottom: 8px;
+    }
+
+    header h2 {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .cta {
+      margin: 12px 0;
+    }
+
+    .cta a {
+      display: inline-block;
+      background: #0077ff;
+      color: #fff;
+      padding: 14px 24px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .cta a:hover {
+      background: #0059cc;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px 15px;
+      text-align: left;
+    }
+
+    section h2 {
+      color: #003366;
+      margin-bottom: 8px;
+      text-align: center;
+    }
+
+    .diferenciais {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+
+    .diferenciais div {
+      flex: 1;
+      min-width: 180px;
+      margin: 6px;
+      padding: 12px;
+      background: #e9f3ff;
+      border-radius: 6px;
+      text-align: center;
+      font-size: 15px;
+    }
+
+    .assistencia-container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      text-align: center;
+    }
+
+    .assistencia-container img {
+      max-width: 360px;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    footer {
+      background: #003366;
+      color: #fff;
+      padding: 20px;
+      margin-top: 15px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="content">
+      <h1>Manancial Purificadores de Água</h1>
+      <h2>Agende já a troca do refil do seu Purificador <br>(TODAS AS MARCAS)</h2>
+
+      <!-- Imagem dos refis -->
+      <div style="margin: 12px 0;">
+        <img src="https://i.ibb.co/PbLtLjs/IMG-6005.jpg" alt="Modelos de Refis" style="max-width: 100%; height: auto; border-radius: 8px;">
+      </div>
+
+      <div class="cta">
+        <a href="https://wa.me/5531991809585" target="_blank">📲 Agendar via WhatsApp</a>
+      </div>
+      <p style="margin-top: 6px; font-weight:bold;">📍 Atendemos BH e Região</p>
+    </div>
+  </header>
+
+  <section>
+    <h2>Por que trocar o refil do seu purificador?</h2>
+    <p style="text-align:center;">
+      A troca do refil garante <strong>água pura, sem odores e sem impurezas</strong>.  
+      Filtros saturados podem comprometer a saúde e reduzir a vida útil do equipamento.  
+      Recomendamos a troca periódica para que você e sua família tenham sempre a melhor qualidade de água.
+    </p>
+  </section>
+
+  <!-- Imagem do filtro limpo x filtro sujo -->
+  <section style="text-align:center; margin: 20px 0;">
+    <img src="https://i.ibb.co/fGTJKLJx/IMG-6009.jpg" alt="Filtro Limpo x Filtro Sujo" style="max-width: 100%; height: auto; border-radius: 8px;">
+  </section>
+
+  <!-- Seção assistência técnica com imagem e diferenciais juntos -->
+  <section>
+    <h2>Assistência técnica especializada</h2>
+    <div class="assistencia-container">
+      <img src="https://i.ibb.co/dJfzyY72/IMG-6004.jpg" alt="Assistência Técnica">
+      <div class="diferenciais">
+        <div><strong>✔ 20 anos</strong><br> De experiência no mercado</div>
+        <div><strong>✔ Revenda Autorizada</strong><br> Everest</div>
+        <div><strong>✔ Especialista</strong><br> em Purificadores Europa e Everest</div>
+        <div><strong>✔ Assistência técnica</strong><br> Todas as marcas</div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>📍 Rua Campos Elíseos, 459 — Alto Barroca</p>
+    <p>📞 (31) 99180-9585</p>
+    <p>© <span id="ano"></span> Manancial Purificadores de Água</p>
+  </footer>
+
+  <script>
+    document.getElementById('ano').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
